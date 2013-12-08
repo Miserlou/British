@@ -1,8 +1,8 @@
 # run this wil along with simple_test.txt in python shell to test parser
 
 import sys
-from unicorn_tokenizer import *
-import unicorn_tokenizer
+from british_tokenizer import *
+import british_tokenizer
 
 
 
@@ -12,12 +12,12 @@ if __name__ == '__main__':
 	characters = file.read()
 	file.close()
 
-	unicorn_tokenize(characters)
+	british_tokenize(characters)
 	try:
 		tree = parse()
 	except:
-		print unicorn_tokenizer.tokens
+		print british_tokenizer.tokens
 		raise
 	tree.eval()
-	# print unicorn_tokenizer.global_env
+	# print british_tokenizer.global_env
 	

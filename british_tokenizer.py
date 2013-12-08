@@ -1,4 +1,4 @@
-import unicorn_lexer
+import british_lexer
 import random
 tokens = []
 token = None
@@ -444,9 +444,9 @@ token_exprs = [
 
 # Tokenizer finds tokens in a string
 
-def unicorn_tokenize(characters):
+def british_tokenize(characters):
     global tokens, token
-    tokens = unicorn_lexer.lex(characters, token_exprs)
+    tokens = british_lexer.lex(characters, token_exprs)
     token = tokens.pop(0)
     # print tokens
 
