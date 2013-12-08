@@ -1,0 +1,39 @@
+mutter "What's your name?"
+
+name <- pardon
+
+mutter "Hello ", name
+
+mutter "Let's play a game! Pick any number between 1 and 20."
+
+mutter "You have 5 tries!"
+
+number <- randomise using 1 to 20
+
+carry on whilst guessing:
+    starting with
+        guess <- 0
+    stop that
+
+    guess <- guess plus 1
+    usernumber <- number_prompt
+    is usernumber less than number ? then:
+        mutter 'The number is too low. Try again.'
+    stop that
+
+    or perhaps usernumber > number ? then:
+        shmutterow 'The number is too high. Try again.'
+    stop that
+
+    otherwise:
+        show 'You guessed it! Great job! You found my number!' 
+        stop guessing
+        show "You guessed the number with this many tries: ", guess
+    stop that
+
+    is guess equals with 5 ? then:
+        stop guessing
+        mutter "That was your last guess."
+    stop that
+
+cheerio()

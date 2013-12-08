@@ -20,4 +20,4 @@ if __name__ == '__main__':
 		raise
 	tree.eval()
 	# print british_tokenizer.global_env
-	
+
