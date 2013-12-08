@@ -12,23 +12,23 @@ number <- randomise using 1 to 20
 
 carry on whilst guessing:
     starting with
-        guess <- 0
+        guess as 0
     stop that
 
-    guess <- guess plus 1
-    usernumber <- number_prompt
+    guess as guess plus 1
+    usernumber as how many
     is usernumber less than number ? then:
         mutter 'The number is too low. Try again.'
     stop that
 
-    or perhaps usernumber > number ? then:
-        shmutterow 'The number is too high. Try again.'
+    or perhaps usernumber is larger than number ? then:
+        mutter 'The number is too high. Try again.'
     stop that
 
     otherwise:
-        show 'You guessed it! Great job! You found my number!' 
+        mutter 'You guessed it! Great job! You found my number!' 
         stop guessing
-        show "You guessed the number with this many tries: ", guess
+        mutter "You guessed the number with this many tries: ", guess
     stop that
 
     is guess equals with 5 ? then:
