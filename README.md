@@ -1,3 +1,5 @@
+![Hm, yes.](http://i.imgur.com/LfS8Dru.gif)
+
 British
 =======
 A proper programming language.
