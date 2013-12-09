@@ -1,6 +1,6 @@
 mutter "What's your name?"
 
-name <- pardon
+name as pardon
 
 mutter "Hello ", name
 
@@ -8,7 +8,7 @@ mutter "Let's play a game! Pick any number between 1 and 20."
 
 mutter "You have 5 tries!"
 
-number <- randomise using 1 to 20
+number as randomise using 1 to 20
 
 carry on whilst guessing:
     starting with

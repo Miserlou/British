@@ -1,10 +1,10 @@
+#! /usr/env/python
+
 # run this wil along with simple_test.txt in python shell to test parser
 
 import sys
 from british_tokenizer import *
 import british_tokenizer
-
-
 
 if __name__ == '__main__':
 	filename = sys.argv[1]
